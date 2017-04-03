@@ -22,3 +22,13 @@ private:
 	double doubleValue;
 	auto_gcroot<String ^> stringValue;
 };
+
+
+extern "C" __declspec(dllexport) void * createSimpleClass();
+extern "C" __declspec(dllexport) void deleteSimpleClass(void * aSimpleClass);
+extern "C" __declspec(dllexport) void setIntValue(void * aSimpleClass, int newIntValue);
+extern "C" __declspec(dllexport) int getIntValue(void * aSimpleClass);
+extern "C" __declspec(dllexport) void setDoubleValue(void * aSimpleClass, double newDoubleValue);
+extern "C" __declspec(dllexport) double getDoubleValue(void * aSimpleClass);
+extern "C" __declspec(dllexport) void setStringValue(void * aSimpleClass, char * newStringValue);
+extern "C" __declspec(dllexport) char * getStringValue(void * aSimpleClass);
