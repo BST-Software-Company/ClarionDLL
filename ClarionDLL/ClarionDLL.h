@@ -3,6 +3,7 @@
 #pragma once
 
 #include <msclr\auto_gcroot.h>
+#include <msclr\marshal.h>
 
 using namespace System;
 using namespace msclr;
